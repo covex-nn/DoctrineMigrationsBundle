@@ -50,7 +50,10 @@ abstract class DoctrineCommand extends BaseCommand
                 /* @var $bundle \Symfony\Component\HttpKernel\Bundle\Bundle */
                 $bundleDir = $bundle->getPath() . "/" . $migrationsDirectory;
                 if (file_exists($bundleDir) && is_dir($bundleDir)) {
-                    $configuration->registerMigrationsFromDirectory($bundleDir);
+                    $configuration->registerMigrationsFromDirectory(
+                      $bundleDir,
+                      $bundle->getNamespace() . "\\Migrations"
+                    );
                 }
             }
         }

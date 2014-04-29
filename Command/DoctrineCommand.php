@@ -52,7 +52,7 @@ abstract class DoctrineCommand extends BaseCommand
                 if (file_exists($bundleDir) && is_dir($bundleDir)) {
                     $configuration->registerMigrationsFromDirectory(
                       $bundleDir,
-                      $bundle->getNamespace() . "\\Migrations"
+                      $bundle->getNamespace() . "\\Application\\Migrations"
                     );
                 }
             }

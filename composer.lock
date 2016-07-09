@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ba43cbd49485eea992720ca8aed7b55",
-    "content-hash": "510f9a87da0f1ff33c6c1141fac78321",
+    "hash": "c2a5632e3e047b4b494f97257b6d15f2",
+    "content-hash": "b0e5f8b5d563b14ccf57b716b032fab4",
     "packages": [
         {
             "name": "covex-nn/migrations",
